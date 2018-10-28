@@ -1,16 +1,7 @@
-
-const App = function() {
-    $("#totalTable").hide()
-    $(document).ready(function() {
-        console.log("DOM fully loaded and parsed - adding event listeners");
-        //document.getElementById('btnLaunch').addEventListener('click', App.launch)
-        // Suresh Chandra Peddinti has changed the following line to use jQuery click()
-        $("#tableclick").click(function(){
-        App.launch()
-        });
-       // document.getElementById('btnExploreHtml').addEventListener('click', App.exploreHtml)
-        //document.getElementById('btnExploreCode').addEventListener('click', App.exploreCode)
-    });
+$("#totalTable").hide()
+var Table = {
+    launch: launch
+}
 
 function launch()
 {
@@ -53,4 +44,3 @@ function getTable(number1,tillValue)
     $("#printtable").append(printTable)
     $("#totalTable").show()
 }
-}();
